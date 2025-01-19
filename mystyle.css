@@ -49,8 +49,24 @@ img{
   padding-top: 20px;
 }
 .menu a{
+  display: inline;
   margin-right: 30px;
   color: white;
+}
+/*we were working desktop first*/
+
+@media(max-width:768px){ /*mobile*/
+  .menu-bar{
+    flex-direction: column;
+  }
+  .menu a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  h1{
+    margin-bottom: 20px;
+  }
 }
 /*more about us*/
 
@@ -60,6 +76,20 @@ img{
 }
 .more-about-item{
   padding: 10px;
+}
+
+@media(max-width:768px){
+  .more-about-container{
+    flex-direction: column;
+  }
+  .more-about-container img{
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .more-about-container h3{
+    text-align: center;
+  }
 }
 
 /*houses*/ 
